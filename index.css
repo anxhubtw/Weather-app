@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e3b51;
+    height: 100vh;
+    color: white;
+    font-family: "Actor";
+}
+
+.card .search {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.search input {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+    transform: scale(1.1);
+    color: white;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.search button {
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.search button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    gap: 150px;
+}
+
+.temp {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.city {
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.icon {
+    height: 66px;
+    width: 79px;
+    display: block;
+    margin: auto;
+}
+
+.det p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 334px) {
+    body {
+        transform: scale(0.8);
+    }
+}
